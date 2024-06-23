@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gees-Kitchen-recipe</title>
+    <link rel="stylesheet" href="output.css">
+</head>
+<body class="text-gray-600 font-body">
+    <div class="md:grid grid-cols-4">
+
+        <div class="md:col-span-1 md:flex md:justify-end">
+            <nav class="text-right">
+                <div class="flex justify-between items-center md:flex md:justify-center">
+                    <div class="">
+                        <img src="images/gee.png" alt="" class="rounded-full w-16 p-2 md:w-24">
+                    </div>
+
+                    <div class="px-4 cursor-pointer md:hidden" id="hamburger">
+
+                        <svg class="w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+                          </svg>
+                          
+                    </div>
+                </div>
+                <ul class="text-sm mt-6 hidden md:block"  id="menu">
+                    <li class="text-gray-900 py-1 my-element opacity-0 transform translate-x-[-50%] transition duration-500 ease-in-out">
+                        <a href="index.html" class="px-4 flex justify-end border-r-4 border-white">
+                            <span>Home</span>
+                            <svg class="w-5 ml-2" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="m2.25 12 8.954-8.955c.44-.439 1.152-.439 1.591 0L21.75 12M4.5 9.75v10.125c0 .621.504 1.125 1.125 1.125H9.75v-4.875c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21h4.125c.621 0 1.125-.504 1.125-1.125V9.75M8.25 21h8.25" />
+                              </svg>
+                        </a>
+                    </li>
+                    <li class="py-1">
+                        <a href="index.html" class="px-4 flex justify-end border-r-4 border-white my-element opacity-0 transform translate-x-[-50%] transition duration-500 ease-in-out">
+                            <span>About</span>
+                            <svg class="w-5 ml-2" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M9.879 7.519c1.171-1.025 3.071-1.025 4.242 0 1.172 1.025 1.172 2.687 0 3.712-.203.179-.43.326-.67.442-.745.361-1.45.999-1.45 1.827v.75M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Zm-9 5.25h.008v.008H12v-.008Z" />
+                              </svg>
+                              
+                        </a>
+                    </li>
+
+
+                    <li class="py-1">
+                        <a href="recipe.html" class="px-4 flex justify-end border-r-4 border-white my-element opacity-0 transform translate-x-[-50%] transition duration-500 ease-in-out">
+                            <span>Recipe</span>
+                            <svg  class="w-5 ml-2" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="m20.25 7.5-.625 10.632a2.25 2.25 0 0 1-2.247 2.118H6.622a2.25 2.25 0 0 1-2.247-2.118L3.75 7.5M10 11.25h4M3.375 7.5h17.25c.621 0 1.125-.504 1.125-1.125v-1.5c0-.621-.504-1.125-1.125-1.125H3.375c-.621 0-1.125.504-1.125 1.125v1.5c0 .621.504 1.125 1.125 1.125Z"/>
+                              </svg>
+                              
+                        </a>
+                    </li>
+
+
+                    <li class="py-1">
+                        <a href="contact.html" class="px-4 flex justify-end border-r-4 border-white my-element opacity-0 transform translate-x-[-50%] transition duration-500 ease-in-out">
+                            <span>Contact</span>
+                            <svg class="w-5 ml-2" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M21.75 6.75v10.5a2.25 2.25 0 0 1-2.25 2.25h-15a2.25 2.25 0 0 1-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0 0 19.5 4.5h-15a2.25 2.25 0 0 0-2.25 2.25m19.5 0v.243a2.25 2.25 0 0 1-1.07 1.916l-7.5 4.615a2.25 2.25 0 0 1-2.36 0L3.32 8.91a2.25 2.25 0 0 1-1.07-1.916V6.75" />
+                              </svg>
+                              
+                        </a>
+                    </li>
+
+                    <div class="flex justify-end py-5 md:hidden">
+                        <a href="#" class="btn text-emerald-950 border-emerald-950 md:border-2 p-3 hover:bg-emerald-950 hover:text-white transition ease-out duration-500">Log In</a>
+                        <a href="#" class="btn text-emerald-950 ml-2 border-emerald-950 md:border-2 p-3 hover:bg-emerald-950 hover:text-white transition ease-out duration-500" >Sign Up</a>
+                    </div>
+                    
+                </ul>
+
+                
+            </nav>
+        </div>
+
+
+        <main class="px-16 py-6 bg-gray-100 md:col-span-3">
+            <div class="hidden md:flex justify-end my-element opacity-0 transform translate-x-[-50%] transition duration-500 ease-in-out">
+                <a href="#" class="btn text-emerald-950 border-emerald-950 md:border-2 p-3 hover:bg-emerald-950 hover:text-white transition ease-out duration-500">Log In</a>
+                <a href="#" class="btn text-emerald-950 ml-2 border-emerald-950 md:border-2 p-3 hover:bg-emerald-950 hover:text-white transition ease-out duration-500" >Sign Up</a>
+            </div>
+
+            <header class="my-element opacity-0 transform translate-x-[-50%] transition duration-500 ease-in-out">
+                <h2 class="text-gray-700 text-6xl font-semibold">Recipes</h2>
+
+            </header>
+
+            <div> 
+                <h4  class="font-bold mt-12 pb-2  border-b border-gray-200 my-element opacity-0 transform translate-x-[-50%] transition duration-500 ease-in-out">Lastest Recipes</h4>
+
+                <div class="mt-8 grid lg:grid-cols-3 gap-10">
+
+                    <div class="card hover:shadow-lg my-element opacity-0 transform translate-x-[-50%] transition duration-500 ease-in-out">
+                        <img src="images/jambolaya pasta.jpg" alt="Jambalaya pasta" class="w-full h-60 sm:h-48 object-cover">
+                        <div class="m-4">
+                            <span class="font-bold">Jambalaya Pasta</span>
+                            <span class="block text-gray-500 text-sm">Recipe by Ini</span>
+                        </div>
+                        <div class="badge">
+                            <svg class="w-5 inline-block" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M12 6v6h4.5m4.5 0a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
+                              </svg>
+                              
+                            <span>25 mins</span>
+                        </div>
+                    </div> 
+
+                    <div class="card hover:shadow-lg my-element opacity-0 transform translate-x-[-50%] transition duration-500 ease-in-out">
+                        <img src="images/noodles.jpg" alt="noodles" class="w-full h-60 sm:h-48 object-cover">
+                        <div class="m-4">
+                            <span class="font-bold">Noodles</span>
+                            <span class="block text-gray-500 text-sm">Recipe by Ini</span>
+                        </div>
+                        <div class="badge">
+                            <svg class="w-5 inline-block" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M12 6v6h4.5m4.5 0a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
+                              </svg>
+                            <span>25 mins</span>
+                        </div>
+                    </div>
+
+                    <div class="card hover:shadow-lg my-element opacity-0 transform translate-x-[-50%] transition duration-500 ease-in-out">
+                        <img src="images/french fries.jpg" alt="French Fries" class="w-full h-60 sm:h-48 object-cover">
+                        <div class="m-4">
+                            <span class="font-bold">French Fries</span>
+                            <span class="block text-gray-500 text-sm">Recipe by Ini</span>
+                        </div>
+                        <div class="badge">
+                            <svg class="w-5 inline-block" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M12 6v6h4.5m4.5 0a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
+                              </svg>
+                            <span>25 mins</span>
+                        </div>
+                    </div>
+                    
+                </div>
+
+                <h4 class="font-bold mt-12 pb-2 border-b border-gray-200 my-element opacity-0 transform translate-x-[-50%] transition duration-500 ease-in-out">Most Popular</h4>
+
+                <div  class="mt-8"> 
+
+                </div>
+
+                <div class="flex justify-center my-element opacity-0 transform translate-x-[-50%] transition duration-500 ease-in-out">
+                    <div class="btn  text-emerald-950 p-3 hover:shadow-inner transform hover:scale-125 hover:bg-opacity-50 transition ease-out duration-300">Load  more</div>
+                </div>
+            </div>        
+    
+        </main>
+
+        
+    </div>
+
+    
+    <div class="px-10 bg-gray-300">
+
+
+        <div class="pb-6">
+        <div class="border-t border-gray-200 lg:grid grid-cols-3">
+        <div class="col-span-1">
+            <h3 class="text-xl font-semibold pt-5 my-element opacity-0 transform translate-x-[-50%] transition duration-500 ease-in-out">Top Rated</h3>
+        
+            <ul>
+                <li class="flex my-5 my-element opacity-0 transform translate-x-[-50%] transition duration-500 ease-in-out">
+                    <img src="images/shredded.jpg" alt="" class="w-10 h-12 rounded-full">
+                    <div class="ml-3 items-center">
+                    <span class="font-bold">Crispy Shredded Chicken</span>
+                    <span class="block text-sm">Recipe by Ini</span>
+                    </div>
+                </li>
+        
+                <li class="flex my-5 my-element opacity-0 transform translate-x-[-50%] transition duration-500 ease-in-out">
+                    <img src="images/fish.jpg" class="w-10 h-12 rounded-full">
+                    <div class="ml-3 items-center">
+                    <span class="font-bold">Fish Soup</span>
+                    <span class="block text-sm">Recipe by Ini</span>
+                    </div>
+                </li>
+        
+                <li class="flex my-5 my-element opacity-0 transform translate-x-[-50%] transition duration-500 ease-in-out">
+                    <img src="images/jambolaya pasta.jpg" alt="" class="w-10 h-12 rounded-full">
+                    <div class="ml-3 items-center">
+                    <span class="font-bold">Jambalaya Rice</span>
+                    <span class="block text-sm">Recipe by Ini</span>
+                    </div>
+                </li>
+        
+                <li class="flex my-5 my-element opacity-0 transform translate-x-[-50%] transition duration-500 ease-in-out">
+                    <img src="images/mushroom.jpg" alt="" class="w-10 h-12 rounded-full">
+                    <div class="ml-3 items-center">
+                    <span class="font-bold">Mushroom Stir Fry</span>
+                    <span class="block text-sm">Recipe by Ini</span>
+                    </div>
+                </li>
+        
+        
+                <li class="flex my-5  my-element opacity-0 transform translate-x-[-50%] transition duration-500 ease-in-out">
+                    <img src="images/coconut.jpg" alt="" class="w-10 h-12 rounded-full">
+                    <div class="ml-3 items-center">
+                    <span class="font-bold">Coconut Fried Rice</span>
+                    <span class="block text-sm">Recipe by Ini</span>
+                    </div>
+                </li>
+        
+            </ul>
+        </div>
+        
+        <div class="col-span-1">
+            <h3 class="text-xl font-semibold mt-5 my-element opacity-0 transform translate-x-[-50%] transition duration-500 ease-in-out">Recent Recipes</h3>
+        
+            <ul>
+                <li class="flex my-5 my-element opacity-0 transform translate-x-[-50%] transition duration-500 ease-in-out">
+                    <img src="images/Egg-friedrice.jpg" alt="" class="w-10 h-12 rounded-full">
+                    <div class="ml-3 items-center">
+                    <span class="font-bold"> Fried Rice</span>
+                    <span class="block text-sm">Recipe by Ini</span>
+                    </div>
+                </li>
+        
+                <li class="flex my-5 my-element opacity-0 transform translate-x-[-50%] transition duration-500 ease-in-out">
+                    <img src="images/noodles.jpg" alt="" class="w-10 h-12 rounded-full">
+                    <div class="ml-3 items-center">
+                    <span class="font-bold">Noodles</span>
+                    <span class="block text-sm">Recipe by Ini</span>
+                    </div>
+                </li>
+        
+                <li class="flex my-5 my-element opacity-0 transform translate-x-[-50%] transition duration-500 ease-in-out">
+                    <img src="images/crab.jpg" alt="" class="w-10 h-12 rounded-full">
+                    <div class="ml-3 items-center">
+                    <span class="font-bold">Crab Masala Fry</span>
+                    <span class="block text-sm">Recipe by Ini</span>
+                    </div>
+                </li>
+        
+                <li class="flex my-5 my-element opacity-0 transform translate-x-[-50%] transition duration-500 ease-in-out">
+                    <img src="images/french fries.jpg" alt="" class="w-10 h-12 rounded-full">
+                    <div class="ml-3 items-center">
+                    <span class="font-bold">French Fries</span>
+                    <span class="block text-sm">Recipe by Ini</span>
+                    </div>
+                </li>
+        
+        
+                <li class="flex my-5 my-element opacity-0 transform translate-x-[-50%] transition duration-500 ease-in-out">
+                    <img src="images/seafood.jpg" alt="" class="w-10 h-12 rounded-full">
+                    <div class="ml-3 items-center">
+                    <span class="font-bold">Seafood Soup</span>
+                    <span class="block text-sm">Recipe by Ini</span>
+                    </div>
+                </li>
+        
+            </ul>
+        </div>
+        <div class="col-span-1 grid place-items-center my-element opacity-0 transform translate-x-[-50%] transition duration-500 ease-in-out">
+            <div>
+                <p class="text-xl font-semibold mt-5 mb-5">Subscribe to our <span class="tracking-widest italic 4xl  uppercase">Newsletter</span></p>
+                <div class="flex items-center  space-x-1 ">
+                    <input type="email" name="mail" id="emailaddress" placeholder="Email-address..." class="mt-1  p-3 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-gray-950 focus:border-gray-950  w-72"> 
+        
+                   <span class="font-bold text-md text-gray-600 bg-gray-100 border border-gray-300 rounded-md shadow-sm  p-3">GO</span>
+                </div>
+            </div>
+        
+        </div>
+        
+        </div>
+        
+        
+        </div>
+        
+        </div>
+        <hr>
+        <div class="  bg-emerald-950 text-gray-200">
+            <div class="pt-5 px-10 md:flex justify-around ">
+                <div class="grid place-items-center md:block my-element opacity-0 transform translate-x-[-50%] transition duration-500 ease-in-out">
+                    <h5>
+                        <a href="#" class="font-semibold">Follow Us</a>
+                    </h5>
+            
+                    <ul class="flex space-x-7  py-5">
+                        <li >
+                            <a href="#">
+                                <svg class="w-5 h-5  fill-gray-200 hover:scale-125 transition-transform duration-300"  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><path d="M80 299.3V512H196V299.3h86.5l18-97.8H196V166.9c0-51.7 20.3-71.5 72.7-71.5c16.3 0 29.4 .4 37 1.2V7.9C291.4 4 256.4 0 236.2 0C129.3 0 80 50.5 80 159.4v42.1H14v97.8H80z"/></svg>
+            
+                            </a>
+                        </li>
+            
+                        <li>
+                            <a href="#">
+                                <svg class="w-5 h-5 fill-gray-200 hover:scale-125 transition-transform duration-300" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"/></svg>
+                            </a>
+                        </li>
+            
+            
+                        <li>
+                            <a href="#">
+                                <svg class="w-5 h-5 fill-gray-200 hover:scale-125 transition-transform duration-300" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><path d="M496 256c0 137-111 248-248 248-25.6 0-50.2-3.9-73.4-11.1 10.1-16.5 25.2-43.5 30.8-65 3-11.6 15.4-59 15.4-59 8.1 15.4 31.7 28.5 56.8 28.5 74.8 0 128.7-68.8 128.7-154.3 0-81.9-66.9-143.2-152.9-143.2-107 0-163.9 71.8-163.9 150.1 0 36.4 19.4 81.7 50.3 96.1 4.7 2.2 7.2 1.2 8.3-3.3 .8-3.4 5-20.3 6.9-28.1 .6-2.5 .3-4.7-1.7-7.1-10.1-12.5-18.3-35.3-18.3-56.6 0-54.7 41.4-107.6 112-107.6 60.9 0 103.6 41.5 103.6 100.9 0 67.1-33.9 113.6-78 113.6-24.3 0-42.6-20.1-36.7-44.8 7-29.5 20.5-61.3 20.5-82.6 0-19-10.2-34.9-31.4-34.9-24.9 0-44.9 25.7-44.9 60.2 0 22 7.4 36.8 7.4 36.8s-24.5 103.8-29 123.2c-5 21.4-3 51.6-.9 71.2C65.4 450.9 0 361.1 0 256 0 119 111 8 248 8s248 111 248 248z"/></svg>
+                            </a>
+                        </li>
+                        
+                        <li>
+                            <a href="#">
+                                <svg class="w-5 h-5 fill-gray-200 hover:scale-125 transition-transform duration-300"  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">s<path d="M448 209.9a210.1 210.1 0 0 1 -122.8-39.3V349.4A162.6 162.6 0 1 1 185 188.3V278.2a74.6 74.6 0 1 0 52.2 71.2V0l88 0a121.2 121.2 0 0 0 1.9 22.2h0A122.2 122.2 0 0 0 381 102.4a121.4 121.4 0 0 0 67 20.1z"/></svg>
+                            </a>
+                        </li>
+            
+                        <li>
+                            <a href="#">
+                                <svg class="w-5 h-5 fill-gray-200 hover:scale-125 transition-transform duration-300"  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><path d="M549.7 124.1c-6.3-23.7-24.8-42.3-48.3-48.6C458.8 64 288 64 288 64S117.2 64 74.6 75.5c-23.5 6.3-42 24.9-48.3 48.6-11.4 42.9-11.4 132.3-11.4 132.3s0 89.4 11.4 132.3c6.3 23.7 24.8 41.5 48.3 47.8C117.2 448 288 448 288 448s170.8 0 213.4-11.5c23.5-6.3 42-24.2 48.3-47.8 11.4-42.9 11.4-132.3 11.4-132.3s0-89.4-11.4-132.3zm-317.5 213.5V175.2l142.7 81.2-142.7 81.2z"/></svg>
+                            </a>
+                        </li>
+            
+                    </ul>
+        
+                    <div class="my-5 my-element opacity-0 transform translate-x-[-50%] transition duration-500 ease-in-out">
+                        <img src="images/gee.png" alt="" class="rounded-full w-20">
+                    </div>
+                </div>
+            
+                <div class="  py-6 grid place-items-center text-center md:text-start md:p-0  md:block my-element opacity-0 transform translate-x-[-50%] transition duration-500 ease-in-out">
+                    <ul class="">
+                        <li class="pb-1 text-sm  hover:scale-125 transition-transform duration-300">
+                            <a href="#">Dinners</a>
+                        </li>
+            
+                        <li class="py-1 text-sm hover:scale-125 transition-transform duration-300">
+                            <a href="#">Ingredients</a>
+                        </li>
+            
+                        <li class="py-1 text-sm hover:scale-125 transition-transform duration-300">
+                            <a href="#">Cusines</a>
+                        </li>
+            
+                        <li class="py-1 text-sm hover:scale-125 transition-transform duration-300">
+                            <a href="#">News</a>
+                        </li>
+            
+                        <li class="py-1 text-sm  hover:scale-125 transition-transform duration-300">
+                            <a href="#">Meals</a>
+                        </li>
+            
+                        <li class="py-1 text-sm hover:scale-125 transition-transform duration-300">
+                            <a href="#">Occasions</a>
+                        </li>
+            
+                        <li class="py-1 text-sm hover:scale-125 transition-transform duration-300">
+                            <a href="#">Kitchen Tips</a>
+                        </li>
+            
+                        <li class="py-1 text-sm hover:scale-125 transition-transform duration-300">
+                            <a href="#">Features</a>
+                        </li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <ul class=" pb-6 pt-5 grid place-items-center text-center border-t border-gray-200 md:text-start md:p-0  md:block md:border-none md:pt-0 my-element opacity-0 transform translate-x-[-50%] transition duration-500 ease-in-out">
+                        <li class="pb-1 text-sm hover:scale-125 transition-transform duration-300 ">
+                            <a href="#">About Us</a>
+                        </li>
+            
+                        <li class="py-1 text-sm hover:scale-125 transition-transform duration-300">
+                            <a href="#">Product Vetting</a>
+                        </li>
+            
+                        <li class="py-1 text-sm hover:scale-125 transition-transform duration-300">
+                            <a href="#">About Us</a>
+                        </li>
+            
+                        <li class="py-1 text-sm hover:scale-125 transition-transform duration-300">
+                            <a href="#">Contact</a>
+                        </li>
+            
+                        <li class="py-1 text-sm hover:scale-125 transition-transform duration-300">
+                            <a href="#">Terms of ervice</a>
+                        </li>
+            
+                        <li class="py-1 text-sm hover:scale-125 transition-transform duration-300">
+                            <a href="#">Privacy Policy</a>
+                        </li>
+                    </ul>
+                </div>
+            
+            </div>
+            <div class="mt-5">
+                <div class="border-t border-gray-200 my-element opacity-0 transform translate-x-[-50%] transition duration-500 ease-in-out">
+                    <p class="text-center font-bold py-7">
+                        ©2024 • Copyright • Gees Kitchen • All Right Reserved
+                    </p>
+                </div>
+            </div>
+            
+        </div>
+    <script src="index.js"></script>
+</body>
+</html>
