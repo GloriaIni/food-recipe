@@ -41,4 +41,44 @@ elements.forEach(element => {
     observer.observe(element);
 });
 
+document.addEventListener('DOMContentLoaded', function() {
+    document.getElementById('delayButtona').addEventListener('click', function(event) {
+        
+        event.preventDefault();
+        
+        
+        setTimeout(function() {
+            
+            window.location.href = "index.html"; 
+        }, 3000); 
+    });
+});
+
+document.addEventListener('DOMContentLoaded', function() {
+    document.getElementById('delayButtonb').addEventListener('click', function(event) {
+        
+        event.preventDefault();
+        
+        
+        setTimeout(function() {
+            
+            window.location.href = "recipe.html"; 
+        }, 3000); 
+    });
+});
+
+
+document.addEventListener('DOMContentLoaded', function() {
+    document.getElementById('delayButtonc').addEventListener('click', function(event) {
+        
+        event.preventDefault();
+        
+        
+        setTimeout(function() {
+            
+            window.location.href = "contact.html"; 
+        }, 3000); 
+    });
+});
+
 
